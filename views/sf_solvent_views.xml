@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+
+        <!-- action -->
+        <record id="ir_actions_act_window_sf_solvent" model="ir.actions.act_window">
+            <field name="name">Solvent</field>
+            <field name="res_model">sf_solvent</field>
+        </record>
+
+                <!-- form -->
+        <record id="ir_ui_view_sf_solvent_form" model="ir.ui.view">
+            <field name="name">sf_solvent_form</field>
+            <field name="model">sf_solvent</field>
+            <field name="arch" type="xml">
+                <form string="Solvent">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                    <!-- chatter -->
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <menuitem id="ir_ui_menu_sf_root" name="Drug BUD">
+            <menuitem sequence="1"
+                      id="ir_ui_menu_sf_solvent"
+                      action="ir_actions_act_window_sf_solvent"/>
+            <menuitem sequence="2"
+                      id="ir_ui_menu_sf_drug"
+                      action="ir_actions_act_window_sf_drug"/>
+        </menuitem>
+    </data>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ir_model_access.group_user.sf_drug,group_user.sf_drug,model_sf_drug,base.group_user,1,1,1,1
+ir_model_access.group_user.sf_solvent,group_user.sf_solvent,model_sf_solvent,base.group_user,1,1,1,1
