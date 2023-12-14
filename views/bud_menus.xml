@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <menuitem id="ir_ui_menu_sf_root" name="Drug BUD">
+        <menuitem id="ir_ui_menu_sf_root" name="Drug BUD" web_icon="odoo_bud,static/description/icon.png">
             <menuitem sequence="1"
                       id="ir_ui_menu_sf_solvent"
                       action="ir_actions_act_window_sf_solvent"/>
