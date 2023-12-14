@@ -7,7 +7,7 @@
             <field name="res_model">sf_solvent</field>
         </record>
 
-                <!-- form -->
+        <!-- form -->
         <record id="ir_ui_view_sf_solvent_form" model="ir.ui.view">
             <field name="name">sf_solvent_form</field>
             <field name="model">sf_solvent</field>
@@ -28,6 +28,6 @@
                 </form>
             </field>
         </record>
-        
+
     </data>
 </odoo>

@@ -15,6 +15,7 @@
         # 'data/sfx_jenis_obat.csv',
         'views/sf_solvent_views.xml',
         'views/sf_drug_views.xml',
+        'views/sf_drug_bud_views.xml',
         'views/bud_menus.xml',
     ],
 

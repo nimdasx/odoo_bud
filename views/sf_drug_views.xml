@@ -17,6 +17,7 @@
                         <group>
                             <field name="name"/>
                             <field name="description"/>
+                            <field name="sf_drug_bud_ids"/>
                         </group>
                     </sheet>
                     <!-- chatter -->

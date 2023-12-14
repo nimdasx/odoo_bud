@@ -2,6 +2,9 @@ from odoo import models, fields
 
 
 class SfSolvent(models.Model):
+    # tambahkan chatter
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+
     _name = 'sf_solvent'
     _description = 'Solvent'
 
@@ -11,6 +14,3 @@ class SfSolvent(models.Model):
         tracking=True,
         help="Input solvent name here")
     description = fields.Text()
-
-    # tambahkan chatter
-    _inherit = ['mail.thread', 'mail.activity.mixin']

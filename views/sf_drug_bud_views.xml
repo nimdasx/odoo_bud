@@ -1,0 +1,33 @@
+<odoo>
+
+    <!-- list / tree / tabular -->
+    <record id="ir_ui_view_sf_drug_bud_tree" model="ir.ui.view">
+        <field name="name">sf_drug tree view</field>
+        <field name="model">sf_drug_bud</field>
+        <field name="arch" type="xml">
+            <tree string="Tree String BUD List" editable="bottom">
+                <field name="sf_solvent_id"/>
+                <field name="storage_temperature"/>
+                <field name="expired_hours"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- form -->
+    <record id="ir_ui_view_sf_drug_bud_form" model="ir.ui.view">
+        <field name="name">sf_drug form view</field>
+        <field name="model">sf_drug_bud</field>
+        <field name="arch" type="xml">
+            <form string="Form String BUD">
+                <sheet>
+                    <group>
+                        <field name="sf_solvent_id"/>
+                <field name="storage_temperature"/>
+                <field name="expired_hours"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
