@@ -17,3 +17,7 @@ class SfDrug(models.Model):
 
     # list drug_bud, sf_drug_id dari tabel sf_drug_bud.sf_drug_id
     sf_drug_bud_ids = fields.One2many("sf_drug_bud", "sf_drug_id", string="Beyond Use Date")
+
+    _sql_constraints = [
+        ('name_check', 'unique(name)', 'Drug Name must unique!')
+    ]

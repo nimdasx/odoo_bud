@@ -14,3 +14,7 @@ class SfSolvent(models.Model):
         tracking=True,
         help="Input solvent name here")
     description = fields.Text()
+
+    _sql_constraints = [
+        ('name_check', 'unique(name)', 'Solvent Name must unique!')
+    ]

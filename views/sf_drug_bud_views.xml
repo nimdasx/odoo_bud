@@ -5,7 +5,7 @@
         <field name="name">sf_drug tree view</field>
         <field name="model">sf_drug_bud</field>
         <field name="arch" type="xml">
-            <tree string="Tree String BUD List" editable="bottom">
+            <tree string="Tree String BUD List">
                 <field name="sf_solvent_id"/>
                 <field name="storage_temperature"/>
                 <field name="expired_hours"/>
@@ -22,8 +22,8 @@
                 <sheet>
                     <group>
                         <field name="sf_solvent_id"/>
-                <field name="storage_temperature"/>
-                <field name="expired_hours"/>
+                        <field name="storage_temperature"/>
+                        <field name="expired_hours"/>
                     </group>
                 </sheet>
             </form>
