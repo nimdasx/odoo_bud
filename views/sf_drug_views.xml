@@ -41,6 +41,16 @@
                 <tree string="Drug Tree">
                     <field name="name"/>
                     <field name="description"/>
+
+                    <!-- nampilin semua list bud format standard -->
+<!--                    <field name="sf_drug_bud_ids" widget="many2many_tags"/>-->
+
+                    <!-- nampilin semua list bud dari field descriptions -->
+<!--                    <field name="sf_drug_bud_descriptions"/>-->
+
+                    <!-- nampilin semua list bud dari field solvent_name -->
+                    <field name="sf_drug_bud_solvent_names"/>
+
                 </tree>
             </field>
         </record>
