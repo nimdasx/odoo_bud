@@ -7,9 +7,10 @@
         <field name="arch" type="xml">
             <tree string="Tree String BUD List">
                 <field name="sf_solvent_id"/>
+                <field name="concentration"/>
                 <field name="description"/>
                 <field name="storage_temperature"/>
-                <field name="expired_hours"/>
+                <field name="expired_in"/>
             </tree>
         </field>
     </record>
@@ -23,9 +24,10 @@
                 <sheet>
                     <group>
                         <field name="sf_solvent_id"/>
+                        <field name="concentration"/>
                         <field name="description"/>
                         <field name="storage_temperature"/>
-                        <field name="expired_hours"/>
+                        <field name="expired_in"/>
                     </group>
                 </sheet>
             </form>
