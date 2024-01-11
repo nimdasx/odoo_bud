@@ -11,6 +11,13 @@ class SfDrugBud(models.Model):
     description = fields.Text(string="Description")
     storage_temperature = fields.Integer(string="Storage Temperature (C)")
     expired_in = fields.Integer(String="Expire In")
+    expired_unit = fields.Selection(
+        selection=[
+            ('hour', 'Hour'),
+            ('day', 'Day'),
+            ('month', 'Month')
+        ],
+        default="hour")
 
     # tambahkan nama solvent disini agar bisa dipanggil oleh sf_drug
     solvent_name = fields.Char(related='sf_solvent_id.name', string="Solvent Name", store=True)

@@ -11,6 +11,7 @@
                 <field name="description"/>
                 <field name="storage_temperature"/>
                 <field name="expired_in"/>
+                <field name="expired_unit"/>
             </tree>
         </field>
     </record>
@@ -28,6 +29,7 @@
                         <field name="description"/>
                         <field name="storage_temperature"/>
                         <field name="expired_in"/>
+                        <field name="expired_unit"/>
                     </group>
                 </sheet>
             </form>
