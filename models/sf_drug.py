@@ -16,6 +16,7 @@ class SfDrug(models.Model):
     _sql_constraints = [
         ('name_check', 'unique(name)', 'Drug Name must unique!')
     ]
+    drug_concentration = fields.Char()
 
     description = fields.Text()
 

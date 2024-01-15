@@ -10,7 +10,7 @@ class SfDrugBud(models.Model):
     concentration = fields.Char()
     description = fields.Text(string="Description")
     storage_temperature = fields.Integer(string="Storage Temperature (C)")
-    expired_in = fields.Integer(String="Expire In")
+    expired_in = fields.Integer()
     expired_unit = fields.Selection(
         selection=[
             ('hour', 'Hour'),

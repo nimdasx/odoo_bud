@@ -17,6 +17,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="drug_concentration"/>
                             <field name="description"/>
                         </group>
                         <field name="sf_drug_bud_ids"/>
@@ -40,6 +41,7 @@
             <field name="arch" type="xml">
                 <tree string="Drug Tree">
                     <field name="name"/>
+                    <field name="drug_concentration"/>
                     <field name="description"/>
 
                     <!-- nampilin semua list bud format standard -->
