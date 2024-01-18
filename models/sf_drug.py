@@ -25,13 +25,12 @@ class SfDrug(models.Model):
     sf_drug_bud_ids = fields.One2many("sf_drug_bud", "sf_drug_id", string="Beyond Use Date")
 
     # loop semua description yang ada di sf_drug_bud.description, ini untuk nampilin semua description
-    sf_drug_bud_descriptions = fields.Text(compute="_compute_sf_drug_bud_descriptions", string="BUD Descriptions")
-
-    @api.depends('sf_drug_bud_ids.description')
-    def _compute_sf_drug_bud_descriptions(self):
-        for record in self:
-            descriptions = record.sf_drug_bud_ids.mapped('description')
-            record.sf_drug_bud_descriptions = ', '.join(descriptions)
+    # sf_drug_bud_descriptions = fields.Text(compute="_compute_sf_drug_bud_descriptions", string="BUD Descriptions")
+    # @api.depends('sf_drug_bud_ids.description')
+    # def _compute_sf_drug_bud_descriptions(self):
+    #     for record in self:
+    #         descriptions = record.sf_drug_bud_ids.mapped('description')
+    #         record.sf_drug_bud_descriptions = ', '.join(descriptions)
 
     # loop semua solvent_name yang ada di sf_drug_bud.solvent_name, ini untuk nampilin semua solvent name
     sf_drug_bud_solvent_names = fields.Char(compute="_compute_sf_drug_bud_solvent_name", string="Solvents")
