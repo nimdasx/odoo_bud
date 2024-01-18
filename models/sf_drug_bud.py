@@ -11,7 +11,7 @@ class SfDrugBud(models.Model):
     description = fields.Text(string="Description")
     # storage_temperature_min = fields.Integer(string="Storage Temperature Minimal (C)")
     # storage_temperature_max = fields.Integer(string="Storage Temperature Maximal (C)")
-    storage_temperature = fields.Text(string="Storage Temperature")
+    storage_temperature = fields.Char(string="Storage Temperature")
     expired_in = fields.Integer()
     expired_unit = fields.Selection(
         selection=[
