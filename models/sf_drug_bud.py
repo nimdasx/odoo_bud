@@ -9,8 +9,9 @@ class SfDrugBud(models.Model):
     sf_solvent_id = fields.Many2one("sf_solvent", required=True, ondelete='cascade', string="Solvent")
     concentration = fields.Char(string="Solvent Concentration")
     description = fields.Text(string="Description")
-    storage_temperature_min = fields.Integer(string="Storage Temperature Minimal (C)")
-    storage_temperature_max = fields.Integer(string="Storage Temperature Maximal (C)")
+    # storage_temperature_min = fields.Integer(string="Storage Temperature Minimal (C)")
+    # storage_temperature_max = fields.Integer(string="Storage Temperature Maximal (C)")
+    storage_temperature = fields.Text(string="Storage Temperature")
     expired_in = fields.Integer()
     expired_unit = fields.Selection(
         selection=[

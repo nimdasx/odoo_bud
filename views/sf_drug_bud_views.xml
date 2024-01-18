@@ -9,8 +9,9 @@
                 <field name="sf_solvent_id"/>
                 <field name="concentration"/>
                 <field name="description"/>
-                <field name="storage_temperature_min"/>
-                <field name="storage_temperature_max"/>
+                <field name="storage_temperature"/>
+<!--                <field name="storage_temperature_min"/>-->
+<!--                <field name="storage_temperature_max"/>-->
                 <field name="expired_in"/>
                 <field name="expired_unit"/>
             </tree>
@@ -28,8 +29,9 @@
                         <field name="sf_solvent_id"/>
                         <field name="concentration"/>
                         <field name="description"/>
-                        <field name="storage_temperature_min"/>
-                        <field name="storage_temperature_max"/>
+                        <field name="storage_temperature"/>
+<!--                        <field name="storage_temperature_min"/>-->
+<!--                        <field name="storage_temperature_max"/>-->
                         <field name="expired_in"/>
                         <field name="expired_unit"/>
                     </group>
