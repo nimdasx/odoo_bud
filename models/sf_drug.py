@@ -17,8 +17,8 @@ class SfDrug(models.Model):
         ('name_check', 'unique(name)', 'Drug Name must unique!')
     ]
     drug_concentration = fields.Char()
-
     description = fields.Text()
+    sf_catdrug_id = fields.Many2one("sf_catdrug",ondelete='cascade',string="Drug Category")
 
     # list drug_bud, sf_drug_id dari tabel sf_drug_bud.sf_drug_id
     # field ini gak ada di database

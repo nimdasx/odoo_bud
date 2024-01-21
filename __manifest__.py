@@ -13,6 +13,7 @@
     'data': [
         'security/ir.model.access.csv',
         # 'data/sfx_jenis_obat.csv',
+        'views/sf_catdrug_views.xml',
         'views/sf_solvent_views.xml',
         'views/sf_drug_views.xml',
         'views/sf_drug_bud_views.xml',

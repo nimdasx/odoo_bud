@@ -2,9 +2,12 @@
     <data>
         <menuitem id="ir_ui_menu_sf_root" name="Drug BUD" web_icon="odoo_bud,static/description/icon.png">
             <menuitem sequence="1"
+                      id="ir_ui_menu_sf_catdrug"
+                      action="ir_actions_act_window_sf_catdrug"/>
+            <menuitem sequence="2"
                       id="ir_ui_menu_sf_solvent"
                       action="ir_actions_act_window_sf_solvent"/>
-            <menuitem sequence="2"
+            <menuitem sequence="3"
                       id="ir_ui_menu_sf_drug"
                       action="ir_actions_act_window_sf_drug"/>
         </menuitem>
