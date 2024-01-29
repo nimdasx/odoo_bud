@@ -15,6 +15,6 @@ class BudController(http.Controller):
         data = [{
             'id':xy.id,
             'name':xy.name,
-            'email':xy.description,
+            'description':xy.description,
         } for xy in xyz]
         return Response(json.dumps(data), content_type='application/json')
