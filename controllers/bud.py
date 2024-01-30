@@ -20,12 +20,15 @@ class BudController(http.Controller):
         else:
             xyz = request.env['sf_drug'].sudo().search([])
 
-        data = [{
-            'id': xy.id,
-            'name': xy.name,
-            'description': xy.description,
-        } for xy in xyz]
-        return Response(json.dumps(data), content_type='application/json')
+        if xyz:
+            data = [{
+                'id': xy.id,
+                'name': xy.name,
+                'description': xy.description,
+            } for xy in xyz]
+            return Response(json.dumps(data), content_type='application/json')
+        else:
+            return Response(json.dumps({'error': 'Record not found'}), content_type='application/json')
 
     @http.route('/sf_drug/get/<int:record_id>', type='http', auth='public')
     def sf_drug_get(self, record_id):
