@@ -1,11 +1,11 @@
 <odoo>
 
-    <!-- list / tree / tabular -->
-    <record id="ir_ui_view_sf_drug_bud_tree" model="ir.ui.view">
-        <field name="name">sf_drug tree view</field>
+    <!-- list / tabular -->
+    <record id="ir_ui_view_sf_drug_bud_list" model="ir.ui.view">
+        <field name="name">sf_drug list view</field>
         <field name="model">sf_drug_bud</field>
         <field name="arch" type="xml">
-            <tree string="Tree String BUD List">
+            <list string="List String BUD List">
                 <field name="sf_solvent_id"/>
                 <field name="concentration"/>
 <!--                <field name="description"/>-->
@@ -14,7 +14,7 @@
 <!--                <field name="storage_temperature_max"/>-->
                 <field name="expired_in"/>
                 <field name="expired_unit"/>
-            </tree>
+            </list>
         </field>
     </record>
 

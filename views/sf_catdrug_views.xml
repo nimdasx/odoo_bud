@@ -29,15 +29,15 @@
             </field>
         </record>
 
-        <!-- list / tree / tabular -->
-        <record id="ir_ui_view_sf_catdrug_tree" model="ir.ui.view">
-            <field name="name">sf_catdrug_tree</field>
+        <!-- list / tabular -->
+        <record id="ir_ui_view_sf_catdrug_list" model="ir.ui.view">
+            <field name="name">sf_catdrug_list</field>
             <field name="model">sf_catdrug</field>
             <field name="arch" type="xml">
-                <tree string="Drug Category Tree">
+                <list string="Drug Category List">
                     <field name="name"/>
                     <field name="description"/>
-                </tree>
+                </list>
             </field>
         </record>
 

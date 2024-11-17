@@ -29,15 +29,15 @@
             </field>
         </record>
 
-        <!-- list / tree / tabular -->
-        <record id="ir_ui_view_sf_solvent_tree" model="ir.ui.view">
-            <field name="name">sf_solvent_tree</field>
+        <!-- list / tabular -->
+        <record id="ir_ui_view_sf_solvent_list" model="ir.ui.view">
+            <field name="name">sf_solvent_list</field>
             <field name="model">sf_solvent</field>
             <field name="arch" type="xml">
-                <tree string="Solvent Tree">
+                <list string="Solvent List">
                     <field name="name"/>
                     <field name="description"/>
-                </tree>
+                </list>
             </field>
         </record>
 

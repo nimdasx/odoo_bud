@@ -35,12 +35,12 @@
             </field>
         </record>
 
-        <!-- list / tree / tabular -->
-        <record id="ir_ui_view_sf_drug_tree" model="ir.ui.view">
-            <field name="name">sf_drug_tree</field>
+        <!-- list / tabular -->
+        <record id="ir_ui_view_sf_drug_list" model="ir.ui.view">
+            <field name="name">sf_drug_list</field>
             <field name="model">sf_drug</field>
             <field name="arch" type="xml">
-                <tree string="Drug Tree">
+                <list string="Drug List">
                     <field name="name"/>
                     <field name="sf_catdrug_id"/>
                     <field name="drug_concentration"/>
@@ -55,7 +55,7 @@
                     <!-- nampilin semua list bud dari field solvent_name -->
                     <field name="sf_drug_bud_solvent_names"/>
 
-                </tree>
+                </list>
             </field>
         </record>
 
